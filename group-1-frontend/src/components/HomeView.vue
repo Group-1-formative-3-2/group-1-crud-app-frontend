@@ -19,7 +19,7 @@
                     {{profile.About}}
                     {{profile.AuthorName}}
 
-                    <a href="#" @click="getDoc(profile._id), updatedInfoShow = true" :class="{active: updatedInfoShow == true }">Edit</a> | 
+                    <a href="#" @click="getDoc(profile._id), updatedInfoShow = true">Edit</a> | 
                     <a href="#" @click="deleteDoc(profile._id)">Delete</a>
                 </div>
             </li>
@@ -33,20 +33,22 @@
         name: 'HomeView',
         data() {
         return {
+            updatedInfoShow: false,
             profiles: [],
             id: "",
             formValues: {
             About: "",
             AuthorName: "",
-            Img: "",
-            updatedInfoShow: false
+            Img: ""
             }
         }
         },
         methods: {
-            // updateShow(){
-            //     this.updatedInfoShow = true
-            // },
+            clearInputs(){
+                this.About = ""
+                this.AuthorName = ""
+                this.Img = ""
+            },
         getDoc(id) { 
             this.id = id
             fetch(api + this.id, {
@@ -74,7 +76,7 @@
             console.log(data)
             alert("Work has been Updated")
             this.getAll()
-            this.formValues = ""
+            this.clearInputs()
             this.updatedInfoShow = false
             })
             .catch((err) => {

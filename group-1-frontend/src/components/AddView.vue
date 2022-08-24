@@ -22,9 +22,13 @@
             }
             },
             methods: {
-            // POST 
+             clearInputs(){
+                this.About = ""
+                this.AuthorName = ""
+                this.Img = ""
+            },
             insertDoc(){
-                fetch(api, {
+                fetch(api + this.id, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
@@ -34,6 +38,9 @@
                 .then((response) => response.text())
                 .then((data) => {
                 console.log(data)
+                alert("Work has been Added")
+                this.clearInputs()
+                // once add is clicked it should go back to a refreshed homeview
                 })
                 .catch((err) => {
                 if (err) throw err;
