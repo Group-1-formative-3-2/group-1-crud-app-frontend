@@ -9,8 +9,8 @@
             {{profile.firstName}}
             {{profile.lastName}}
 
-            <a href="#" @click="getDoc(profile._id)">Edit</a> | 
-            <a href="#" @click="deleteDoc(profile._id)">Delete</a>
+            <a class="editbtn" href="#" @click="getDoc(profile._id)">Edit</a> | 
+            <a class="deletebtn" href="#" @click="deleteDoc(profile._id)">Delete</a>
         </div>
         </li>
       </ul>

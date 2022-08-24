@@ -75,6 +75,22 @@ button:focus-visible {
   padding: 2rem;
   text-align: center;
 }
+.editbtn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding: 7px 30px;
+  border-radius: 35px;
+  background-color: #E53E77;
+  color: white;
+}
+.deletebtn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding: 6px 30px;
+  border-radius: 35px;
+  background-color: #6F4F9D;
+  color: white;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
