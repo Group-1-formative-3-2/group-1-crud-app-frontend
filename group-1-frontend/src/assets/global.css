@@ -1,0 +1,15 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --c-purple:#6F4F9D;  
+    --c-pink:#BE4196; 
+    --c-orange:#E53E77; 
+    --c-header-font:'Audiowide', cursive;; 
+    --c-body-font:'Montserrat', sans-serif;
+    --body-size: 1.5rem;
+    --header-size: 2.5rem;
+}

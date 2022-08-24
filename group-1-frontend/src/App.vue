@@ -8,7 +8,6 @@
     </nav>
     <HomeView></HomeView>
     <AddView></AddView>
-    <UpdateView></UpdateView>
     <AboutView></AboutView>
   </div>
 
@@ -17,7 +16,6 @@
 <script>
   import HomeView from "./components/HomeView.vue"
   import AddView from "./components/AddView.vue"
-  import UpdateView from "./components/UpdateView.vue"
   import AboutView from "./components/AboutView.vue"
 
   export default{
@@ -25,7 +23,6 @@
     components: {
     HomeView,
     AddView,
-    UpdateView,
     AboutView
 }
   }
@@ -33,11 +30,13 @@
 
 
 
-<style scoped>
+<style scoped lang="css">
+@import "../src/assets/main.css";
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
+
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
