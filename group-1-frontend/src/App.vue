@@ -1,15 +1,22 @@
 <template>
-  <div>
+  <div class="header">
 
-    <nav>
+    <!-- <nav>
       View
       Add
       About
-    </nav>
-    <HomeView></HomeView>
+    </nav> -->
+    <!-- <HomeView></HomeView>
     <AddView></AddView>
     <UpdateView></UpdateView>
-    <AboutView></AboutView>
+    <AboutView></AboutView> -->
+
+    <router-link to="/">Home</router-link>
+    <router-link to="/add">Add</router-link>
+    <router-link to="/update">Update</router-link>
+    <router-link to="/about">About</router-link>
+
+    <router-view></router-view>
   </div>
 
 </template>
@@ -34,6 +41,10 @@
 
 
 <style scoped>
+.header{
+
+  
+}
 .logo {
   height: 6em;
   padding: 1.5em;

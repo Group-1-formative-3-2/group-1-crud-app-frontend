@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="add">
         <input type="text" placeholder="firstName" v-model="formValues.firstName">
         <input type="text" placeholder="lastName" v-model="formValues.lastName">
         <input type="text" placeholder="imageUrl" v-model="formValues.imageUrl">
@@ -35,6 +35,7 @@
                 .then((response) => response.text())
                 .then((data) => {
                 console.log(data)
+                this.$router.push('/')
                 })
                 .catch((err) => {
                 if (err) throw err;

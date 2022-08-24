@@ -1,16 +1,18 @@
 <template>
-<div>
+<div class="home">
       <h2>Profile Count: {{profiles.length}}</h2>
       <ul>
         <li v-for="profile in profiles" :key="profile">
         <div>
-            <img :src="profile.imageURL" alt="">
+
             {{profile._id}}
+            <img :src="profile.imageUrl" alt="">
+
             {{profile.firstName}}
             {{profile.lastName}}
 
             <a href="#" @click="getDoc(profile._id)">Edit</a> | 
-            <a href="#" @click="deleteDoc(profile._id)">Delete</a>
+            <a href="#" @click="deleteWork(profile._id)">Delete</a>
         </div>
         </li>
       </ul>
