@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-
+    <a href="/"><img src="./assets/Classly logo.png" alt=""></a>
     <!-- <nav>
       View
       Add
@@ -10,12 +10,12 @@
     <AddView></AddView>
     <UpdateView></UpdateView>
     <AboutView></AboutView> -->
-
-    <router-link to="/">Home</router-link>
-    <router-link to="/add">Add</router-link>
-    <router-link to="/update">Update</router-link>
-    <router-link to="/about">About</router-link>
-
+    <div class="router_links">
+      <router-link to="/"  style="color: #fff;">Home</router-link>
+      <router-link to="/add"   style="color: #fff;">Add</router-link>
+      <router-link to="/update"   style="color: #fff;">Update</router-link>
+      <router-link to="/about"   style="color: #fff;">About</router-link>
+    </div>
     <router-view></router-view>
   </div>
 
@@ -41,10 +41,7 @@
 
 
 <style scoped>
-.header{
 
-  
-}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -55,5 +52,9 @@
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+router-link{
+  color: #fff;
 }
 </style>

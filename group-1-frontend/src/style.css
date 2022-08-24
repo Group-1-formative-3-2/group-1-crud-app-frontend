@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: montserrat;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -8,11 +11,22 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  --pink: #E53E77;
+  --orange: #F17A3F;
+  --purple: #6F4F9D;
+  --hotRed: #EA4060;
+
+
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+
+  
+
 }
 
 *{
@@ -46,9 +60,7 @@ body {
   min-height: 100vh;
 }
 
-.header{
-  gap: 30px;
-}
+
 
 h1 {
   font-size: 3.2em;
@@ -74,8 +86,101 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
+
 .card {
   padding: 2em;
+}
+.body{
+  width: 100vw;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header img{
+  width: 400px;
+}
+
+.router_links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  font-family: audiowide;
+  gap: 50px;
+  background-color: #BE4196;
+  width: 98vw;
+  padding: 10px 20px;
+  margin-top: 30px;
+  
+}
+router-link{
+  color: #fff;
+}
+
+.home{
+  width: 100vw;
+  background-color: rgba(111, 79, 157, 0.2);
+}
+
+.profileGrid{
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.profile{
+  background-color: #fff;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 10px;
+}
+
+.profLeft img{
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.leftBtns{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.editBtn{
+  background-color: var(--pink);
+  border-radius: 20px;
+}
+
+.editBtn a{
+  color: #fff;
+}
+
+.delBtn{
+  background-color: var(--purple);
+  border-radius: 20px;
+}
+
+.delBtn a{
+  color: #fff;
+}
+
+.profRight{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
 }
 
 #app {
@@ -84,6 +189,7 @@ button:focus-visible {
   padding: 2rem;
   text-align: center;
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -95,5 +201,17 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .profileGrid{
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .profileGrid{
+    grid-template-columns: auto;
   }
 }

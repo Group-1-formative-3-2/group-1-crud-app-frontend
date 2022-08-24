@@ -1,18 +1,33 @@
 <template>
 <div class="home">
-      <h2>Profile Count: {{profiles.length}}</h2>
-      <ul>
-        <li v-for="profile in profiles" :key="profile">
-        <div>
+      <!-- <h2>Profile Count: {{profiles.length}}</h2> -->
+      
+      
+      <ul class="profileGrid">
+        <li v-for="profile in profiles" :key="profile" >
+        <div class="profile">
+          <div class="profLeft">
 
-            {{profile._id}}
-            <img :src="profile.imageUrl" alt="">
+            <img :src="profile.imageUrl" alt=""/>
+            <div class="leftBtns">
 
-            {{profile.firstName}}
-            {{profile.lastName}}
+              <button class="editBtn" ><a href="#" @click="getDoc(profile._id)">Edit</a></button>  
 
-            <a href="#" @click="getDoc(profile._id)">Edit</a> | 
-            <a href="#" @click="deleteWork(profile._id)">Delete</a>
+              <button class="delBtn" ><a href="#" @click="deleteWork(profile._id)">Delete</a></button>
+
+            </div>
+          </div>
+          <div class="profRight">
+            <small>ID: {{profile._id}}</small>
+            <p>Name: {{profile.firstName}}</p>
+
+            <p>{{profile.lastName}}</p>
+
+           
+            
+            
+
+          </div>
         </div>
         </li>
       </ul>
