@@ -8,7 +8,6 @@
     </nav>
     <HomeView></HomeView>
     <AddView></AddView>
-    <UpdateView></UpdateView>
     <AboutView></AboutView>
   </div>
 
@@ -17,7 +16,6 @@
 <script>
   import HomeView from "./components/HomeView.vue"
   import AddView from "./components/AddView.vue"
-  import UpdateView from "./components/UpdateView.vue"
   import AboutView from "./components/AboutView.vue"
 
   export default{
@@ -25,7 +23,6 @@
     components: {
     HomeView,
     AddView,
-    UpdateView,
     AboutView
 }
   }

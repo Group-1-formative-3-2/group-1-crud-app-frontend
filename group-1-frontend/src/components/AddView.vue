@@ -1,8 +1,7 @@
 <template>
     <div>
-        <input type="text" placeholder="firstName" v-model="formValues.firstName">
-        <input type="text" placeholder="lastName" v-model="formValues.lastName">
-        <input type="text" placeholder="imageUrl" v-model="formValues.imageUrl">
+        <input type="text" placeholder="About" v-model="formValues.About">
+        <input type="text" placeholder="AuthorName" v-model="formValues.AuthorName">
         <button @click="insertDoc">Insert Document</button>
     </div>
 </template>
@@ -16,9 +15,9 @@
                 profiles: [],
                 id: "",
                 formValues: {
-                firstName: "",
-                lastName: "",
-                imageUrl: ""
+                About: "",
+                AuthorName: "",
+                Img: "",
                 }
             }
             },
