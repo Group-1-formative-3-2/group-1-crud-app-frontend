@@ -1,7 +1,9 @@
 <template>
     <div>
+        <input type="text" placeholder="Author Name" v-model="formValues.AuthorName">
         <input type="text" placeholder="About" v-model="formValues.About">
-        <input type="text" placeholder="AuthorName" v-model="formValues.AuthorName">
+        <input type="text" placeholder="Image URL" v-model="formValues.Img">
+        <input type="text" placeholder="Contact E-Mail" v-model="formValues.Contact">
         <button @click="insertDoc">Insert Document</button>
     </div>
 </template>
@@ -18,6 +20,7 @@
                 About: "",
                 AuthorName: "",
                 Img: "",
+                Contact: ""
                 }
             }
             },
