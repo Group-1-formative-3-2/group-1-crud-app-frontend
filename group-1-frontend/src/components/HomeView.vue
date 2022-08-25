@@ -26,7 +26,7 @@
             </div>
           </div>
           <div class="profRight">
-            <small>ID: {{profile._id}}</small>
+            <!-- <small>ID: {{profile._id}}</small> -->
             <p>Name: {{profile.AuthorName}}</p>
 
             <p>{{profile.Contact}}</p>
