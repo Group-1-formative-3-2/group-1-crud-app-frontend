@@ -20,16 +20,21 @@
                 profiles: [],
                 id: "",
                 formValues: {
-                firstName: "",
-                lastName: "",
-                imageUrl: ""
+                About: "",
+                AuthorName: "",
+                Img: "",
+                Contact: ""
                 }
             }
             },
             methods: {
-            // POST 
+             clearInputs(){
+                this.About = ""
+                this.AuthorName = ""
+                this.Img = ""
+            },
             insertDoc(){
-                fetch(api, {
+                fetch(api + this.id, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"

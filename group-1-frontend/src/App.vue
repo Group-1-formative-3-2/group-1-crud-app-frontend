@@ -23,7 +23,6 @@
 <script>
   import HomeView from "./components/HomeView.vue"
   import AddView from "./components/AddView.vue"
-  
   import AboutView from "./components/AboutView.vue"
 
   export default{

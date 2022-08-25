@@ -10,37 +10,31 @@
           <button @click="updateDoc">Update Document</button>
       </div>
 
-
       <ul class="profileGrid">
         <li v-for="profile in profiles" :key="profile" >
-        <div class="profile">
-          <div class="profLeft">
+          <div class="profile">
+            <div class="profLeft">
 
-            <img :src="profile.Img" alt=""/>
-            <div class="leftBtns">
+              <img :src="profile.Img" alt=""/>
+              <div class="leftBtns">
 
-              <button class="editBtn" ><a href="#" @click="getDoc(profile._id), updatedInfoShow=true">Edit</a></button>  
+                <button class="editBtn" ><a href="#" @click="getDoc(profile._id), updatedInfoShow=true">Edit</a></button>  
 
-              <button class="delBtn" ><a href="#" @click="deleteDoc(profile._id)">Delete</a></button>
+                <button class="delBtn" ><a href="#" @click="deleteDoc(profile._id)">Delete</a></button>
 
+              </div>
             </div>
-          </div>
-          <div class="profRight">
-            <small>ID: {{profile._id}}</small>
-            <p>Name: {{profile.AuthorName}}</p>
+            <div class="profRight">
+              <small>ID: {{profile._id}}</small>
+              <p>Name: {{profile.AuthorName}}</p>
 
-            <p>{{profile.Contact}}</p>
-            <p>{{ profile.About }}</p>
-
-           
-            
-            
-
-          </div>
-        </div>
+              <p>{{profile.Contact}}</p>
+              <p>{{ profile.About }}</p>
+            </div>
+          </div>  
         </li>
       </ul>
-  </div>
+    </div>
 </template>
 
 <script>
