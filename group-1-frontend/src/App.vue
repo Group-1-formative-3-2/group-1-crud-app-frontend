@@ -30,8 +30,7 @@
 
 
 
-<style scoped lang="css">
-@import "../src/assets/main.css";
+<style scoped>
 .logo {
   height: 6em;
   padding: 1.5em;
