@@ -39,7 +39,8 @@
             formValues: {
             About: "",
             AuthorName: "",
-            Img: ""
+            Img: "",
+            Contact: ""
             }
         }
         },
@@ -48,6 +49,7 @@
                 this.About = ""
                 this.AuthorName = ""
                 this.Img = ""
+                this.Contact = ""
             },
         getDoc(id) { 
             this.id = id
