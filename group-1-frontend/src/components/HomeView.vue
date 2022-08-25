@@ -6,6 +6,7 @@
           <input type="text" v-model.trim="id" disabled placeholder="Work ID">
           <input type="text" placeholder="About" v-model="formValues.About">
           <input type="text" placeholder="Author Name" v-model="formValues.AuthorName">
+          <input type="text" placeholder="Contact E-Mail" v-model="formValues.Contact">
           <input type="text" placeholder="image Url" v-model="formValues.Img">
           <button @click="updateDoc">Update Document</button>
       </div>
@@ -25,7 +26,6 @@
               </div>
             </div>
             <div class="profRight">
-              <small>ID: {{profile._id}}</small>
               <p>Name: {{profile.AuthorName}}</p>
 
               <p>{{profile.Contact}}</p>

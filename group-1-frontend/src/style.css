@@ -15,6 +15,9 @@
   --orange: #F17A3F;
   --purple: #6F4F9D;
   --hotRed: #EA4060;
+  --mainPurple: #BE4196;
+
+
   --background: rgba(111, 79, 157, 0.2);
 
 
@@ -145,10 +148,11 @@ router-link{
 
 .profLeft img{
   width: 300px;
-  height: 250px;
+  height: 190px;
   object-fit: cover;
   border-radius: 10px;
   margin: 10px;
+  border: 3px solid var(--mainPurple);
 }
 
 .leftBtns{
@@ -179,10 +183,13 @@ router-link{
   display: flex;
   flex-direction: column;
   align-items:flex-start;
+  justify-content: center;
 }
-
+/* edited */
 .profRight p{
   font-size: 1em;
+  text-align: left;
+  color: black;
 }
 
 #app {
@@ -198,6 +205,30 @@ input{
   padding: 0.8em 1.2em;
 
   margin: 30px 5px 5px 0;
+}
+
+/* Add page CSS */
+.wrapper{
+  width: 100vw;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+}
+.add{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.add input{
+  width: 700px;
+}
+.addBtn{
+  margin-top: 20px;
+  margin-bottom: 100px;
+  width: 300px;
 }
 
 

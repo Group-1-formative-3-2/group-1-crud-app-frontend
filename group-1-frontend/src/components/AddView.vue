@@ -1,13 +1,13 @@
 <template>
-    <div class="add">
-        <input type="text" placeholder="Author Name" v-model="formValues.AuthorName">
-
-        <input type="text" placeholder="About" v-model="formValues.About">
-
-        <input type="text" placeholder="Image URL" v-model="formValues.Img">
-
-        <input type="text" placeholder="Contact E-Mail" v-model="formValues.Contact">
-        <button @click="insertDoc">Insert Document</button>
+    
+    <div class="wrapper">
+        <div class="add">
+            <input type="text" placeholder="Author Name" v-model="formValues.AuthorName">
+            <input type="text" placeholder="About" v-model="formValues.About">
+            <input type="text" placeholder="Image URL" v-model="formValues.Img">
+            <input type="text" placeholder="Contact E-Mail" v-model="formValues.Contact">
+            <button class="addBtn" @click="insertDoc">Insert Document</button>
+        </div>
     </div>
 </template>
 
