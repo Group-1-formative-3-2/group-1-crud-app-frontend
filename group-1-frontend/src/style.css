@@ -91,6 +91,19 @@ button:focus-visible {
   background-color: #6F4F9D;
   color: white;
 }
+.headtitle {
+  font-family: 'Audiowide', cursive;
+  font-size: 20px;
+  color: white;
+}
+.header {
+  padding: 15px;
+  background-color: #BE4196;
+}
+.logo {
+  width: 327px;
+  height: 75px;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

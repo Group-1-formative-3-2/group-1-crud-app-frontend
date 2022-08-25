@@ -1,11 +1,14 @@
 <template>
   <div>
+    <img class="logo" src="./MicrosoftTeams-image.png">
+    <div class="header">
+      <nav class="headtitle">
+        View
+        Add
+        About
+      </nav>
+    </div>
 
-    <nav>
-      View
-      Add
-      About
-    </nav>
     <HomeView></HomeView>
     <AddView></AddView>
     <UpdateView></UpdateView>

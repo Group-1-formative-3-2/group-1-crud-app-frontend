@@ -11,7 +11,7 @@
 
             <a class="editbtn" href="#" @click="getDoc(profile._id)">Edit</a> | 
             <a class="deletebtn" href="#" @click="deleteDoc(profile._id)">Delete</a>
-        </div>
+        </div><br>
         </li>
       </ul>
   </div>
