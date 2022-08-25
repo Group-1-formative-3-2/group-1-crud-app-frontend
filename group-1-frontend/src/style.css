@@ -15,6 +15,7 @@
   --orange: #F17A3F;
   --purple: #6F4F9D;
   --hotRed: #EA4060;
+  --background: rgba(111, 79, 157, 0.2);
 
 
 
@@ -121,7 +122,7 @@ router-link{
 
 .home{
   width: 100vw;
-  background-color: rgba(111, 79, 157, 0.2);
+  background-color: var(--background);
 }
 
 .profileGrid{
@@ -136,6 +137,7 @@ router-link{
   margin: 10px;
   display: flex;
   flex-direction: row;
+
   border-radius: 10px;
   padding: 20px;
   gap: 10px;
@@ -177,6 +179,10 @@ router-link{
   display: flex;
   flex-direction: column;
   align-items:flex-start;
+}
+
+.profRight p{
+  font-size: 1em;
 }
 
 #app {
