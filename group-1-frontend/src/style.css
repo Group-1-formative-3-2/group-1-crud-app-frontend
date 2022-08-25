@@ -24,14 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-
-  
-
 }
 
 *{
   list-style-type: none;
-
 }
 
 a {
@@ -79,7 +75,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--purple);
 }
 button:focus,
 button:focus-visible {
@@ -117,7 +113,7 @@ button:focus-visible {
   width: 98vw;
   padding: 10px 20px;
   margin-top: 30px;
-  
+  font-size: 1.5rem;
 }
 router-link{
   color: #fff;
@@ -188,6 +184,14 @@ router-link{
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+input{
+  border-radius: 8px;
+  border: 1px solid ;
+  padding: 0.8em 1.2em;
+
+  margin: 30px 5px 5px 0;
 }
 
 

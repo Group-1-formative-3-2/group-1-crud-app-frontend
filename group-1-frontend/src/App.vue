@@ -13,7 +13,6 @@
     <div class="router_links">
       <router-link to="/"  style="color: #fff;">Home</router-link>
       <router-link to="/add"   style="color: #fff;">Add</router-link>
-      <router-link to="/update"   style="color: #fff;">Update</router-link>
       <router-link to="/about"   style="color: #fff;">About</router-link>
     </div>
     <router-view></router-view>
@@ -24,7 +23,7 @@
 <script>
   import HomeView from "./components/HomeView.vue"
   import AddView from "./components/AddView.vue"
-  import UpdateView from "./components/UpdateView.vue"
+  
   import AboutView from "./components/AboutView.vue"
 
   export default{
@@ -32,7 +31,6 @@
     components: {
     HomeView,
     AddView,
-    UpdateView,
     AboutView
 }
   }
