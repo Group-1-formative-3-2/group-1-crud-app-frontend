@@ -4,15 +4,9 @@
     <section id="container">
         <div id="about">
 
-            <p>Lorem ipsum dolor sit amet. Et minus sint qui sequi quia ad deserunt officia. Qui voluptates aperiam est perspiciatis fugiat a repudiandae explicabo non enim illo. </p> 
+            <p>Classly was created for the purpose of showcasing various different pieces of work designed and created by students at Yoobee College Christchurch campus. This app is to make it easier for users to browse different pieces of work and receive information about each one such as a description, the name of the creator and their contact information. Users can also add their own work to the app, making it easier for students to save and share their work as well as being able to view their classmates work. </p> 
             <br>
-            <p>Eum quae soluta et adipisci molestiae et obcaecati galisum et doloremque ipsum non itaque ipsam At quis magni. Quo quia voluptatem sed quod voluptates ut autem fugiat aut quia nihil et eveniet laudantium est blanditiis libero. </p>
-            <br>
-            <p>Et neque animi id officiis asperiores et quaerat laboriosam qui debitis delectus non architecto eius. In ratione beatae non pariatur fuga et praesentium similique. </p>
-            <br>
-            <p>Ea maxime expedita et ullam impedit aut soluta consequatur ut praesentium architecto. Id iste quaerat id iste esse qui commodi itaque est expedita nesciunt. Est commodi minima sed sunt ullam non voluptatum officia ex laborum voluptas qui exercitationem impedit  tempore dolor. Et voluptas eligendi qui earum autem et consequatur nesciunt qui consequatur distinctio non molestiae quia ut omnis sapiente. </p>
-            <br>
-            <p>A nostrum galisum ut aliquam amet id quia nihil et eveniet recusandae non quibusdam rerum cum internos quis ut commodi doloremque. Ut eius cumque nam soluta quia ad asperiores dolore. </p>
+            <p>Classly was created by Amy Crampton, Vincent Zhang, Moysar Lulu, Kay Zhang and Kristika Barrington </p>
 
         </div>
 
