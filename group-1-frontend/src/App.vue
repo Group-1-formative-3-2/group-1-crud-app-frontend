@@ -1,15 +1,6 @@
 <template>
   <div class="header">
     <a href="/"><img src="./assets/Classly logo.png" alt=""></a>
-    <!-- <nav>
-      View
-      Add
-      About
-    </nav> -->
-    <!-- <HomeView></HomeView>
-    <AddView></AddView>
-    <UpdateView></UpdateView>
-    <AboutView></AboutView> -->
     <div class="router_links">
       <router-link to="/"  style="color: #fff;">Home</router-link>
       <router-link to="/add"   style="color: #fff;">Add</router-link>

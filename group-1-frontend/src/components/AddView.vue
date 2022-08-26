@@ -32,6 +32,7 @@
                 this.About = ""
                 this.AuthorName = ""
                 this.Img = ""
+                this.Contact = ""
             },
             insertDoc(){
                 fetch(api + this.id, {
@@ -54,7 +55,6 @@
             fetch(api)
                 .then((response) => response.json())
                 .then((data) => {
-                // console.log(data)
                 this.profiles = data
                 })
                 .catch((err) => {

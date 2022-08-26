@@ -1,40 +1,38 @@
 <template>
-<div class="home">
-      <!-- <h2>Profile Count: {{profiles.length}}</h2> -->
-      
-      <div class="updatedInfo" v-show="updatedInfoShow">
-          <input type="text" v-model.trim="id" disabled placeholder="Work ID">
-          <input type="text" placeholder="About" v-model="formValues.About">
-          <input type="text" placeholder="Author Name" v-model="formValues.AuthorName">
-          <input type="text" placeholder="Contact E-Mail" v-model="formValues.Contact">
-          <input type="text" placeholder="image Url" v-model="formValues.Img">
-          <button @click="updateDoc">Update Document</button>
-      </div>
-
-      <ul class="profileGrid">
-        <li v-for="profile in profiles" :key="profile" >
-          <div class="profile">
-            <div class="profLeft">
-
-              <img :src="profile.Img" alt=""/>
-              <div class="leftBtns">
-
-                <button class="editBtn" ><a href="#" @click="getDoc(profile._id), updatedInfoShow=true">Edit</a></button>  
-
-                <button class="delBtn" ><a href="#" @click="deleteDoc(profile._id)">Delete</a></button>
-
-              </div>
-            </div>
-            <div class="profRight">
-              <p>Name: {{profile.AuthorName}}</p>
-
-              <p>{{profile.Contact}}</p>
-              <p>{{ profile.About }}</p>
-            </div>
-          </div>  
-        </li>
-      </ul>
+  <div class="home">
+    <div class="updatedInfo" v-show="updatedInfoShow">
+        <input type="text" v-model.trim="id" disabled placeholder="Work ID">
+        <input type="text" placeholder="About" v-model="formValues.About">
+        <input type="text" placeholder="Author Name" v-model="formValues.AuthorName">
+        <input type="text" placeholder="Contact E-Mail" v-model="formValues.Contact">
+        <input type="text" placeholder="image Url" v-model="formValues.Img">
+        <button @click="updateDoc">Update Document</button>
     </div>
+
+    <ul class="profileGrid">
+      <li v-for="profile in profiles" :key="profile" >
+        <div class="profile">
+          <div class="profLeft">
+
+            <img :src="profile.Img" alt=""/>
+            <div class="leftBtns">
+
+              <button class="editBtn" ><a href="#" @click="getDoc(profile._id), updatedInfoShow=true">Edit</a></button>  
+
+              <button class="delBtn" ><a href="#" @click="deleteDoc(profile._id)">Delete</a></button>
+
+            </div>
+          </div>
+          <div class="profRight">
+            <p><b>Name:</b> {{profile.AuthorName}}</p>
+
+            <p><b>Contact:</b> {{profile.Contact}}</p>
+            <p><b>About:</b> {{ profile.About }}</p>
+          </div>
+        </div>  
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -69,6 +67,10 @@ const api = "https://fabulous-cocada-f68050.netlify.app/.netlify/functions/api/"
           .then((response) => response.json())
           .then((data) => {
             console.log(data)
+            this.formValues.About = data.About
+            this.formValues.AuthorName = data.AuthorName
+            this.formValues.Img = data.Img
+            this.formValues.Contact = data.Contact
             this.getAll()
           })
           .catch((err) => {
